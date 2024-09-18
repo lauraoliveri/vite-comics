@@ -13,7 +13,7 @@ import AppFooter from './components/AppFooter.vue';
 export default {
   data() {
     return { 
-      count: 0
+      
     }
   },
   // 2) Dichiarazione del componente
@@ -41,4 +41,13 @@ export default {
 
 <style lang="scss">
 @use 'assets/scss/main' as *;
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
 </style>

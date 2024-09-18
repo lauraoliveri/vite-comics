@@ -1,6 +1,4 @@
 <script>
-
-
 </script>
 
 
@@ -63,7 +61,6 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 
@@ -95,4 +92,5 @@ ul {
 .shop-locator {
     width: 40px;
 }
+
 </style>
