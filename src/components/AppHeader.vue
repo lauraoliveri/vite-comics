@@ -2,7 +2,7 @@
 export default {
   data() {
     return { 
-      message: 'Template Vite + Vue'
+     
     }
   }
 }
@@ -10,9 +10,38 @@ export default {
 
 <template>
   <header>
-    <h1>
-      {{ message }}
-    </h1>
+    <div>
+      <img src="../assets/img/dc-logo.png" alt="Logo">
+    </div>
+    <ul>
+      <li>
+        <a href="#"> Character </a>
+      </li>
+      <li> 
+        <a href="#"> Comics </a>
+      </li>
+      <li> 
+        <a href="#"> Movies </a>
+      </li>
+      <li> 
+        <a href="#"> Tv </a>
+      </li>
+      <li> 
+        <a href="#"> Games </a>
+      </li>
+      <li>
+        <a href="#"> Videos </a>
+      </li>
+      <li>
+        <a href="#"> Fans </a>
+      </li>
+      <li>
+        <a href="#"> News </a>
+      </li>
+      <li>
+        <a href="#"> Shop </a>
+      </li>
+    </ul>
   </header>
 </template>
 
@@ -20,9 +49,44 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 header {
-  background-color: $mainBgColor;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
+
+    div {
+      img{
+        width: 80px;
+      }
+    }
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: smaller;
+      color: $mainGrey;
+      padding: 20px;
+      margin-right: 5px;
+
+      :hover {
+      color: $mainGrey;
+      opacity: 0.5;
+      cursor: pointer;
+      }
+
+      a {
+        color: $mainGrey;
+        text-decoration: none;
+      }
+      :active {
+        color: $mainColor;
+      }
+    }
+  }
 }
 
 h1 {
